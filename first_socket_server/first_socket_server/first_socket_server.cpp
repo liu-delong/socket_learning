@@ -72,7 +72,7 @@ int main()
         }
         //下面开始说话
         cout << "请输入你要说的话:";
-        cin >> sendbuf;
+        cin.getline(sendbuf, 100);
         sendlen = send(socket_receive, sendbuf, 100, 0);
         if (sendlen < 0)
         {

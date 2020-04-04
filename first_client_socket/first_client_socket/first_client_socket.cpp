@@ -73,7 +73,7 @@ int main()
         char send_message[100];
         char receive_message[100];
         cout << "请输入你要对服务器说的话：";
-        cin >> send_message;
+        cin.getline(send_message,100);
         int sendlen = send(client_socket, send_message, 100, 0);//sendlen为实际发送的字符串长度。
 
         if (sendlen < 0)
