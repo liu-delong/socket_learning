@@ -47,6 +47,11 @@ int main()
 			cout << "失去与服务器的连接" << endl;
 			break;
 		}
+		if (strcmp(sendbuf, "Q") == 0)
+		{
+			cout << "断开与服务器的连接，程序退出" << endl;
+			break;
+		}
 		cout << "等待服务器回信" << endl;
 		char receivebuf[1000];
 		int receivelen = recv(client_socket, receivebuf, 1000, 0);
