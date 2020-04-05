@@ -1,0 +1,2 @@
+E:\my university\learning\cpp\myc++\learning_socket\echo_client\Debug\echo_client.exe
+E:\my university\learning\cpp\myc++\learning_socket\echo_client\Debug\echo_client.pdb
